@@ -4,7 +4,7 @@ import Friend from '../Friend/Friend';
 
 const Friends = () => {
     const friends = useLoaderData();
-    console.log(friends);
+    // console.log(friends);
     return (
         <div>
             <h2>I have so many friends.{friends.length}</h2>
