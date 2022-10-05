@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import ('./Friend.css')
 
 const Friend = ({friend}) => {
@@ -8,7 +8,7 @@ const Friend = ({friend}) => {
         <div className='friend'>
             <h3>Name: {name}</h3>
             <p>Email: {email}</p>
-            <p><small>UserName: <Link to={`/friend/${id}`}>{username}</Link></small></p>
+            <p><small>UserName: <NavLink to={`/friend/${id}`}>{username}</NavLink></small></p>
         </div>
     );
 };

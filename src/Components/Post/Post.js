@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import ('./Post.css')
 
 const Post = ({post}) => {
@@ -12,8 +12,8 @@ const Post = ({post}) => {
         <div className='post'>
             <h2>{title}</h2>
             <p><small>{body}</small></p>
-            <Link to={`/post/${id}`} >Visit: {id}</Link>
-            <Link to={`/post/${id}`}><button>Details Link</button></Link>
+            <NavLink to={`/post/${id}`} >Visit: {id}</NavLink>
+            <NavLink to={`/post/${id}`}><button>Details NavLink</button></NavLink>
             <button onClick={handleNavigate}>Details Handler</button>
         </div>
     );
